@@ -1,5 +1,6 @@
 # Command List
 ## Owner (Manage Server Permissions) Commands
+### Channel Configuration Options
 
 | Command Syntax | What It Does?! |
 | -------------- | -------------- |
@@ -10,3 +11,95 @@
 | !cb channel greetings #CHANNEL-NAME | Set greetings/goodbye channel. |
 | !cb channel ownertwitchfeed #CHANNEL-NAME | Set owner twitch feed notification channel. |
 | !cb channel clear announce / ownerlive / live / ownerpublished / published / greetings / ownertwitchfeed / all | Clear set channels. |
+
+### "Allow" Configuration Options
+
+| Command Syntax | What It Does?! |
+| -------------- | -------------- |
+| !cb allow mention true / false | Allow @ mentions at the start of your announcements. |
+| !cb allow thumbnails true / false | Allow thumbnails |
+| !cb allow live true / false | Allow live content to be announced. |
+| !cb allow published true / false | Allow published content to be announced. |
+| !cb allow ownerchannelfeed true / false | Allw owner twitch channel feed announcements. |
+
+### Message Configuration Options
+
+| Command Syntax | What It Does?! |
+| -------------- | -------------- |
+| !cb message live "YOUR MESSAGE HERE" | Set your own Go Live message! Variables you can use: %CHANNEL%, %TITLE%, %URL%, and %GAME% (works Twitch, Beam, and Hitbox. YouTube will put "a game" in place of the game title. API limitation :() |
+| !cb message published "YOUR MESSAGE HERE" | Set your own Published Video message! Variables you can use: %CHANNEL%, %TITLE%, and %URL% |
+| !cb message offline "YOUR MESSAGE HERE" | Set your own message to display when a stream goes offline (!cb config deleteoffline must be set to false) |
+| !cb message testlive beam / hitbox / twitch / youtube | Test the output of a specific platform. |
+| !cb message testpublished | Test output of a published video. |
+
+### Greeting/Goodbye Configuration Options
+
+| Command Syntax | What It Does?! |
+| -------------- | -------------- |
+| !cb greetings on /off | Toggle on or off greeting notifications. |
+| !cb goodbyes on /off | Toggle on or off goodbyes notifications. |
+| !cb greetings set "Your Welcome Message!" | Customize your greeting. %USER% and %NEWLINE% can be used to insert the newcomers name and/or a new line. |
+| !cb goodbyes set "Your Goodbye Message!" | Customize your greeting. %USER% and %NEWLINE% can be used to insert the newcomers name and/or a new line. |
+
+### Misc. Configuration Options
+
+| Command Syntax | What It Does?! |
+| -------------- | -------------- |
+| !cb config list | Check out your current configuration settings. |
+| !cb config textannouncements true / false | Use old announcements if true, use embeds if false. |
+| !cb config timezoneoffset NUMBER | Set your timezone offset from GMT. (ie: !cb config timezoneoffset |5 for EST) |
+| !cb config deleteoffline true / false | If true, messages will be deleted when the user goes offline. If false, a message indicating it is now offline will be added. |
+| !cb config mentionrole @ROLE|NAME | Set this to @everyone, or @YourCustomRole. This role will be announced if !cb allow mention is set to true. Please note | @here is not a valid role. This is unsusable. You can however, disable mentions .. and use @here in your custom messages. These commands can be found in the section right above this one :) |
+| !cb config publishedytg true / false | www. vs gaming. on YouTube links. |
+
+### Test Commands
+
+| Command Syntax | What It Does?! |
+| -------------- | -------------- |
+| !cb message testlive youtube / beam / twitch / hitbox | Test live announcements. |
+| !cb message testpublished | Test published announcements. |
+
+## Owner (Manage Server Permissions) and Approved Admin Commands
+### Streamer Settings Configuration Options
+
+| Command Syntax | What It Does?! |
+| -------------- | -------------- |
+| !cb streamer list | See a list of your configured streamers. |
+| !cb mixer add channel | |
+| !cb mixer remove channel | |
+| !cb mixer owner channel | Can only have 1 owner per server. |
+| !cb mixer resetowner | Reset the Owner Mixer channel.  |
+| !cb picarto add Channel | |
+| !cb picarto remove Channel | |
+| !cb picarto owner Channel | |
+| !cb picarto announce Channel | |
+| !cb smashcast add channel | |
+| !cb smashcast remove channel | |
+| !cb smashcast owner channel | Can only have 1 owner per server.
+| !cb smashcast resetowner | Reset the Owner Smashcast channel.  |
+| !cb twitch add channel | |
+| !cb twitch remove channel | |
+| !cb twitch owner channel | Can only have 1 owner per server.
+| !cb twitch resetowner | Reset the Owner Twitch channel. |
+| !cb youtube add channelid | |
+| !cb youtube remove channelid | |
+| !cb youtube owner channelid | Can only have 1 owner per server.
+| !cb youtube resetowner | Reset the Owner YouTube channel. |
+
+## Everyone! Commands
+### Bot Info Commands
+
+| Command Syntax | What It Does?! |
+| -------------- | -------------- |
+| !cb invite | Get an invite link for CouchBot to join your server! |
+| !cb uptime | See bot uptime. |
+| !cb alerts | See the # of alerts that have been sent. |
+| !cb info | # of Servers, Configured Users, and Helpful links. |
+
+### Misc. Commands
+
+| Command Syntax | What It Does?! |
+| -------------- | -------------- |
+| !cb ytidlookup ChannelName | Need to lookup a YouTube Channel ID? Use this! (ie: !cb ytidlookup dawgeth) |
+| !cb strawpoll create "QUESTION|CHOICE1,CHOICE2,etc|TRUE/FALSE for multi-choice" |
+| !cb haibai | let folks know Hi! Then Bye! |
