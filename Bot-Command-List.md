@@ -6,6 +6,8 @@
 | !cb admin remove @DiscordUsername | Remove an approved admin. |
 | !cb admin list | List out your approved admins. |
 
+---
+
 #### Channel Configuration Options
 
 | Command Syntax | What It Does?! |
