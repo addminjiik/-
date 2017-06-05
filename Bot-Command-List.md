@@ -1,18 +1,19 @@
-# Command List
-## Owner (Manage Server Permissions) Commands
-### Channel Configuration Options
+### Owner (Manage Server Permissions) Commands
+#### Channel Configuration Options
 
 | Command Syntax | What It Does?! |
 | -------------- | -------------- |
-| !cb channel live #CHANNEL-NAME | Set channel for live content. |
-| !cb channel published #CHANNEL-NAME | Set channel for published content. |
-| !cb channel ownerpublished #CHANNEL-NAME | Set channel for the Server Owner's published content. |
-| !cb channel ownerlive #CHANNEL-NAME | Set channel for the Server Owner's live content. |
-| !cb channel greetings #CHANNEL-NAME | Set greetings/goodbye channel. |
-| !cb channel ownertwitchfeed #CHANNEL-NAME | Set owner twitch feed notification channel. |
-| !cb channel clear announce / ownerlive / live / ownerpublished / published / greetings / ownertwitchfeed / all | Clear set channels. |
+| !cb channel live #DISCORDCHANNELNAME | Set channel for live content. |
+| !cb channel published #DISCORDCHANNELNAME  | Set channel for published content. |
+| !cb channel ownerlive #DISCORDCHANNELNAME | Set channel for the Server Owner's live content. |
+| !cb channel ownerpublished #DISCORDCHANNELNAME  | Set channel for the Server Owner's published content. |
+| !cb channel greetings #DISCORDCHANNELNAME | Set greetings/goodbye channel. |
+| !cb channel ownertwitchfeed #DISCORDCHANNELNAME | Set owner twitch feed notification channel. |
+| !cb channel clear ownerlive / live / ownerpublished / published / greetings / ownertwitchfeed / all | Clear set channels. |
 
-### "Allow" Configuration Options
+---
+
+#### "Allow" Configuration Options
 
 | Command Syntax | What It Does?! |
 | -------------- | -------------- |
@@ -22,17 +23,21 @@
 | !cb allow published true / false | Allow published content to be announced. |
 | !cb allow ownerchannelfeed true / false | Allw owner twitch channel feed announcements. |
 
-### Message Configuration Options
+---
+
+#### Message Configuration Options
 
 | Command Syntax | What It Does?! |
 | -------------- | -------------- |
-| !cb message live "YOUR MESSAGE HERE" | Set your own Go Live message! Variables you can use: %CHANNEL%, %TITLE%, %URL%, and %GAME% (works Twitch, Beam, and Hitbox. YouTube will put "a game" in place of the game title. API limitation :() |
+| !cb message live "YOUR MESSAGE HERE" | Set your own live message! Variables you can use: %CHANNEL%, %TITLE%, %URL%, and %GAME% (works Twitch, Mixer, and Smashcast. YouTube will put "a game" in place of the game title. API limitation :() |
 | !cb message published "YOUR MESSAGE HERE" | Set your own Published Video message! Variables you can use: %CHANNEL%, %TITLE%, and %URL% |
 | !cb message offline "YOUR MESSAGE HERE" | Set your own message to display when a stream goes offline (!cb config deleteoffline must be set to false) |
-| !cb message testlive beam / hitbox / twitch / youtube | Test the output of a specific platform. |
+| !cb message testlive mixer / smashcast / twitch / youtube | Test the output of a specific platform. |
 | !cb message testpublished | Test output of a published video. |
 
-### Greeting/Goodbye Configuration Options
+---
+
+#### Greeting/Goodbye Configuration Options
 
 | Command Syntax | What It Does?! |
 | -------------- | -------------- |
@@ -41,7 +46,9 @@
 | !cb greetings set "Your Welcome Message!" | Customize your greeting. %USER% and %NEWLINE% can be used to insert the newcomers name and/or a new line. |
 | !cb goodbyes set "Your Goodbye Message!" | Customize your greeting. %USER% and %NEWLINE% can be used to insert the newcomers name and/or a new line. |
 
-### Misc. Configuration Options
+---
+
+#### Misc. Configuration Options
 
 | Command Syntax | What It Does?! |
 | -------------- | -------------- |
@@ -52,15 +59,22 @@
 | !cb config mentionrole @ROLE|NAME | Set this to @everyone, or @YourCustomRole. This role will be announced if !cb allow mention is set to true. Please note | @here is not a valid role. This is unsusable. You can however, disable mentions .. and use @here in your custom messages. These commands can be found in the section right above this one :) |
 | !cb config publishedytg true / false | www. vs gaming. on YouTube links. |
 
-### Test Commands
+---
+
+#### Test Commands
 
 | Command Syntax | What It Does?! |
 | -------------- | -------------- |
-| !cb message testlive youtube / beam / twitch / hitbox | Test live announcements. |
+| !cb message testlive youtube / mixer / twitch / smashcast | Test live announcements. |
 | !cb message testpublished | Test published announcements. |
 
-## Owner (Manage Server Permissions) and Approved Admin Commands
-### Streamer Settings Configuration Options
+---
+
+### Owner (Manage Server Permissions) and Approved Admin Commands
+
+---
+
+#### Streamer Settings Configuration Options
 
 | Command Syntax | What It Does?! |
 | -------------- | -------------- |
@@ -86,8 +100,10 @@
 | !cb youtube owner channelid | Can only have 1 owner per server.
 | !cb youtube resetowner | Reset the Owner YouTube channel. |
 
-## Everyone! Commands
-### Bot Info Commands
+---
+
+### Everyone! Commands
+#### Bot Info Commands
 
 | Command Syntax | What It Does?! |
 | -------------- | -------------- |
@@ -96,7 +112,9 @@
 | !cb alerts | See the # of alerts that have been sent. |
 | !cb info | # of Servers, Configured Users, and Helpful links. |
 
-### Misc. Commands
+---
+
+#### Misc. Commands
 
 | Command Syntax | What It Does?! |
 | -------------- | -------------- |
