@@ -1,4 +1,11 @@
 ### Owner (Manage Server Permissions) Commands
+#### Approved Admin Configuration Options
+| Command Syntax | What It Does?! |
+| -------------- | -------------- |
+| !cb admin add @DiscordUsername | Add a new approved admin. |
+| !cb admin remove @DiscordUsername | Remove an approved admin. |
+| !cb admin list | List out your approved admins. |
+
 #### Channel Configuration Options
 
 | Command Syntax | What It Does?! |
