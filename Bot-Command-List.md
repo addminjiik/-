@@ -18,7 +18,7 @@
 | Command Syntax | What It Does?! |
 | -------------- | -------------- |
 | !cb allow mention true / false | Allow @ mentions at the start of your announcements. |
-| !cb allow thumbnails true / false | Allow thumbnails |
+| !cb allow thumbnails true / false | Allow thumbnails in announcements. |
 | !cb allow live true / false | Allow live content to be announced. |
 | !cb allow published true / false | Allow published content to be announced. |
 | !cb allow ownerchannelfeed true / false | Allw owner twitch channel feed announcements. |
