@@ -1,2 +1,2 @@
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8EneV4gjOUo" frameborder="0" allowfullscreen></iframe>
-
+[![Self Host Bot Setup Video](https://img.youtube.com/vi/8EneV4gjOUo/0.jpg)](https://www.youtube.com/watch?v=8EneV4gjOUo)  
+_Click the thumbnail to watch the video_
