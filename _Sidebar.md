@@ -7,3 +7,4 @@
 ## Self Host Bot (YourBot)
 ##### [Installation](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Installation)
 ##### [Configuration](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Configuration)
+##### [Migrating to New Version](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Migration)
