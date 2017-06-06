@@ -1,4 +1,4 @@
-Migrating to a New Version? (This Migration)[https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Migration] document may help!
+Migrating to a New Version? [This Migration](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Migration) document may help!
 
 1. Go to [https://console.developers.google.com](https://console.developers.google.com). Create an app. Create API key. Save that API Key.
 2. Go to [https://www.twitch.tv/settings/connections](https://www.twitch.tv/settings/connections). Click Register your application. Create a new application. Save your Client ID.
