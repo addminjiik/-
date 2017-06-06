@@ -2,6 +2,8 @@ Please note - up until 6/6/2017 your BotSettings were housed in C:\ProgramData\C
 
 **!!!!!BEFORE YOU UPGRADE - PLEASE BACK UP YOUR FILE AT C:\ProgramData\CouchBot\BotSettings.json!!!!!**
 
+In fact, might do you good just to backup all of C:\ProgramData\CouchBot before updating.
+
 You can then copy/paste the values from it, into the new BotSettings.json file.
 
 ---
