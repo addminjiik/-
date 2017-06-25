@@ -106,8 +106,21 @@
 | !cb twitch resetowner | Reset the Owner Twitch channel. |
 | !cb youtube add channelid | |
 | !cb youtube remove channelid | |
-| !cb youtube owner channelid | Can only have 1 owner per server.
+| !cb youtube owner channelid | Can only have 1 owner per server. |
 | !cb youtube resetowner | Reset the Owner YouTube channel. |
+
+---
+
+#### Game and Team Announcements (Twitch Only)
+
+| Command Syntax | What It Does?! |
+| -------------- | -------------- |
+| !cb twitch addteam "teamtoken" |  ie: !cb twitch addteam "ths" for The Hammer Squad - To Add a Team |
+| !cb twitch removeteam "teamtoken" |  ie: !cb twitch removeteam "ths" for The Hammer Squad - To Remove a Team |
+| !cb twitch listteams | List teams you're monitoring. |
+| !cb twitch addgame "Game Name" |  ie: !cb twitch addgame "League of Legends" - To Add a Game |
+| !cb twitch removegame "Game Name" |  ie: !cb twitch removegame "League of Legends" - To Remove a Game |
+| !cb twitch listgames | List gamesyou're monitoring. |
 
 ---
 
