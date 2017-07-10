@@ -85,6 +85,8 @@
 
 #### Streamer Settings Configuration Options
 
+NOTE: In the below commands, replace CHANNEL or CHANNELID with the name of your channel .. or channel id. 
+
 | Command Syntax | What It Does?! |
 | -------------- | -------------- |
 | !cb streamer list | See a list of your configured streamers. |
