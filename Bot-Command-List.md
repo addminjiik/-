@@ -109,7 +109,7 @@ NOTE: In the below commands, replace CHANNEL or CHANNELID with the name of your 
 | !cb vidme add channelid | |
 | !cb vidme remove channelid | |
 | !cb vidme owner channelid | Can only have 1 owner per server. |
-| !cb vidme resetowner | Reset the Owner YouTube channel. |
+| !cb vidme resetowner | Reset the Owner Vidme channel. |
 | !cb youtube add channelid | |
 | !cb youtube remove channelid | |
 | !cb youtube owner channelid | Can only have 1 owner per server. |
