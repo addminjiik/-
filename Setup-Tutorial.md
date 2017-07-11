@@ -16,6 +16,10 @@
 * !cb twitch remove channel
 * !cb twitch owner channel - Can only have 1 owner per server.
 * !cb twitch resetowner
+* !cb vidme add channelid
+* !cb vidme remove channelid
+* !cb vidme owner channelid - Can only have 1 owner per server.
+* !cb vidme resetowner
 * !cb youtube add channelid
 * !cb youtube remove channelid
 * !cb youtube owner channelid - Can only have 1 owner per server.
