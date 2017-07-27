@@ -86,7 +86,7 @@ Install and Configure Bot
 4. cd CouchBot
 
 Install the .NET CORE SDK
-https://www.microsoft.com/net/core#linuxcentos
+https://www.microsoft.com/net/core#linuxubuntu
 
 Run:
 
