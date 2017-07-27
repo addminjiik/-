@@ -1,3 +1,9 @@
+[Windows](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Installation#windows)
+
+[Centos 7](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Installation#linux-centos-7)
+
+[Ubuntu 16.04](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Installation#linux-ubuntu-1604)
+
 # Windows
 
 1. Download and install ASP.Net Core - The Latest Version. This can be found [here](https://www.microsoft.com/net/download/core) - It's untested on Linux/Mac - but should function with some [bot configuration](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Configuration).  
