@@ -118,7 +118,7 @@ Cleanup stuff from SDK install
 
 Install and Configure Bot
 
-14. wget http://couchbot.io/release/CouchBot_Centos.zip
+14. wget http://couchbot.io/release/CouchBot_Ubuntu1604.zip
 15. apt-get install Unzip
 16. rm Couchbot_Centos.zip
 17. cd CouchBot
