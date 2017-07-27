@@ -51,6 +51,7 @@ Install and Configure Bot
 22. Change your OWNER ID (this is your discord ID)
 23. Change your DIRECTORIES to this:
 
+
 	"Directories": {
 
 		"ConfigRootDirectory": "/home/CouchBot/Data",
