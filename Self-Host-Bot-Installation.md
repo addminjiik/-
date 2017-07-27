@@ -1,10 +1,12 @@
+# Platforms
+
 [Windows](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Installation#windows)
 
 [Centos 7](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Installation#linux-centos-7)
 
 [Ubuntu 16.04](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Installation#linux-ubuntu-1604)
 
-# Windows
+## Windows
 
 1. Download and install ASP.Net Core - The Latest Version. This can be found [here](https://www.microsoft.com/net/download/core) - It's untested on Linux/Mac - but should function with some [bot configuration](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Configuration).  
 2. Download the CouchBot files via [http://couchbot.io/release/CouchBot.zip].  
@@ -13,7 +15,7 @@
 6. You will get a configuration error indicating you need to set up the Bot Settings, API keys, etc.
 7. To continue, setting up your bot: [Bot Configuration](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Configuration)
 
-# Linux (Centos 7)
+## Linux (Centos 7)
 
 Installed on CentOS 7 64-bit
 
@@ -84,7 +86,7 @@ Install and Configure Bot
 24. dotnet MTD.CouchBot.dll
 25. Good to go.
 
-# Linux (Ubuntu 16.04)
+## Linux (Ubuntu 16.04)
 
 1. Log In.
 2. Go to your Home directory.
