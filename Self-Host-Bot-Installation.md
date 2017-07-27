@@ -51,17 +51,17 @@ Install and Configure Bot
 22. Change your OWNER ID (this is your discord ID)
 23. Change your DIRECTORIES to this:
 
-  "Directories": {
-    "ConfigRootDirectory": "/home/CouchBot/Data",
-    "GuildDirectory": "/Guilds",
-    "UserDirectory": "/Users",
-    "LiveDirectory": "/Live",
-    "MixerDirectory": "/Mixer",
-    "PicartoDirectory": "/Picarto",
-    "SmashcastDirectory": "/Smashcast",
-    "TwitchDirectory": "/Twitch",
-    "YouTubeDirectory": "/YouTube"
-  },
+	"Directories": {
+		"ConfigRootDirectory": "/home/CouchBot/Data",
+		"GuildDirectory": "/Guilds",
+		"UserDirectory": "/Users",
+		"LiveDirectory": "/Live",
+		"MixerDirectory": "/Mixer",
+		"PicartoDirectory": "/Picarto",
+		"SmashcastDirectory": "/Smashcast",
+		"TwitchDirectory": "/Twitch",
+		"YouTubeDirectory": "/YouTube"
+	},
 
 23. Save the file
 24. dotnet MTD.CouchBot.dll
