@@ -52,15 +52,25 @@ Install and Configure Bot
 23. Change your DIRECTORIES to this:
 
 	"Directories": {
+
 		"ConfigRootDirectory": "/home/CouchBot/Data",
+
 		"GuildDirectory": "/Guilds",
+
 		"UserDirectory": "/Users",
+
 		"LiveDirectory": "/Live",
+
 		"MixerDirectory": "/Mixer",
+
 		"PicartoDirectory": "/Picarto",
+
 		"SmashcastDirectory": "/Smashcast",
+
 		"TwitchDirectory": "/Twitch",
+
 		"YouTubeDirectory": "/YouTube"
+
 	},
 
 23. Save the file
