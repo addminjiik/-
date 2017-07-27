@@ -7,7 +7,7 @@
 6. You will get a configuration error indicating you need to set up the Bot Settings, API keys, etc.
 7. To continue, setting up your bot: [Bot Configuration](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Configuration)
 
-# Linux (CentOS tested.)
+# Linux (Centos 7)
 
 Installed on CentOS 7 64-bit
 
@@ -77,3 +77,73 @@ Install and Configure Bot
 23. Save the file
 24. dotnet MTD.CouchBot.dll
 25. Good to go.
+
+# Linux (Ubuntu 16.04)
+
+1. Log In.
+2. Go to your Home directory.
+3. mkdir CouchBot
+4. cd CouchBot
+
+Install the .NET CORE SDK
+https://www.microsoft.com/net/core#linuxcentos
+
+Run:
+
+1. sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ xenial main" > /etc/apt/sources.list.d/dotnetdev.list'
+2. sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
+3. sudo apt-get install apt-transport-https
+4. sudo apt-get update
+5. sudo apt-get install dotnet-dev-1.0.4
+6. dotnet new console -o hwapp
+7. cd hwapp
+8. dotnet restore
+9. dotnet run
+10. If Hello World! is displayed? Great. If not? Lets figure out why. Join us on discord - http://discord.couchbot.io - and let's see what we can do to help.
+
+Cleanup stuff from SDK install
+
+11. cd ..
+12. rm dotnet.tar.gz
+13. rm -rf hwapp
+
+Install and Configure Bot
+
+14. wget http://couchbot.io/release/CouchBot_Centos.zip
+15. apt-get install Unzip
+16. rm Couchbot_Centos.zip
+17. cd CouchBot
+18. nano BotSettings.json
+19. Input your DISCORD TOKEN
+20. Input your TWITCH ID
+21. Input your YOUTUBE API KEY
+22. Change your PREFIX
+23. Change your OWNER ID (this is your discord ID)
+24. Change your DIRECTORIES to this:
+
+
+	"Directories": {
+
+		"ConfigRootDirectory": "/home/CouchBot/Data",
+
+		"GuildDirectory": "/Guilds",
+
+		"UserDirectory": "/Users",
+
+		"LiveDirectory": "/Live",
+
+		"MixerDirectory": "/Mixer",
+
+		"PicartoDirectory": "/Picarto",
+
+		"SmashcastDirectory": "/Smashcast",
+
+		"TwitchDirectory": "/Twitch",
+
+		"YouTubeDirectory": "/YouTube"
+
+	},
+
+25. Save the file
+26. dotnet MTD.CouchBot.dll
+27. Good to go.
