@@ -19,6 +19,8 @@
 ## Linux (Centos 7)
 [Back to Top](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Installation#platforms)
 
+Please note: There are a couple issues identified. These are going to be fixed ASAP.
+
 1. Log In.
 2. Go to your Home directory.
 3. mkdir CouchBot
@@ -88,6 +90,8 @@ Install and Configure Bot
 
 ## Linux (Ubuntu 16.04)
 [Back to Top](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Installation#platforms)
+
+Please note: There are a couple issues identified. These are going to be fixed ASAP.
 
 1. Log In.
 2. Go to your Home directory.
