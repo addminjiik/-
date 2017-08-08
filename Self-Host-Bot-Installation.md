@@ -66,21 +66,21 @@ Install and Configure Bot
 
 		"ConfigRootDirectory": "/home/CouchBot/Data",
 
-		"GuildDirectory": "/Guilds",
+		"GuildDirectory": "/Guilds/",
 
-		"UserDirectory": "/Users",
+		"UserDirectory": "/Users/",
 
 		"LiveDirectory": "/Live",
 
-		"MixerDirectory": "/Mixer",
+		"MixerDirectory": "/Mixer/",
 
-		"PicartoDirectory": "/Picarto",
+		"PicartoDirectory": "/Picarto/",
 
-		"SmashcastDirectory": "/Smashcast",
+		"SmashcastDirectory": "/Smashcast/",
 
-		"TwitchDirectory": "/Twitch",
+		"TwitchDirectory": "/Twitch/",
 
-		"YouTubeDirectory": "/YouTube"
+		"YouTubeDirectory": "/YouTube/"
 
 	},
 
@@ -139,21 +139,21 @@ Install and Configure Bot
 
 		"ConfigRootDirectory": "/home/CouchBot/Data",
 
-		"GuildDirectory": "/Guilds",
+		"GuildDirectory": "/Guilds/",
 
-		"UserDirectory": "/Users",
+		"UserDirectory": "/Users/",
 
 		"LiveDirectory": "/Live",
 
-		"MixerDirectory": "/Mixer",
+		"MixerDirectory": "/Mixer/",
 
-		"PicartoDirectory": "/Picarto",
+		"PicartoDirectory": "/Picarto/",
 
-		"SmashcastDirectory": "/Smashcast",
+		"SmashcastDirectory": "/Smashcast/",
 
-		"TwitchDirectory": "/Twitch",
+		"TwitchDirectory": "/Twitch/",
 
-		"YouTubeDirectory": "/YouTube"
+		"YouTubeDirectory": "/YouTube/"
 
 	},
 
