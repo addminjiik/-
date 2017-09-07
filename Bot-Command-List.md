@@ -1,6 +1,6 @@
 WORK IN PROGRESS.
 
-## CouchBot Commands
+# CouchBot Commands
 
 **In this section:**
 
@@ -9,9 +9,10 @@ WORK IN PROGRESS.
     - [`admin add [@DISCORD_USER_NAME]`](#add-approved-admin)
     - [`admin remove [@DISCORD_USER_NAME]`](#remove-approved-admin)
     - [`admin list`](#list-approved-admins)
+  - 
 
-### Owner Commands
-#### Approved Admin Configuration
+## Owner Commands
+### Approved Admin Configuration
 
 An approved admin on your server will be able to add/remove streamers to/from the streamer lists. They WILL NOT be able to add/remove platform owner settings though.
 
@@ -77,25 +78,171 @@ Run this command to see a list of your servers approved admins.
 
 ------
 
-| Command Syntax | What It Does?! |
-| -------------- | -------------- |
-| !cb admin add @DiscordUsername | Add a new approved admin. |
-| !cb admin remove @DiscordUsername | Remove an approved admin. |
-| !cb admin list | List out your approved admins. |
+### Channel Configuration
 
----
+Use the following commands to configure where the bot will send it's messages.
 
-#### Channel Configuration Options
+#### Livestream Channel
 
-| Command Syntax | What It Does?! |
-| -------------- | -------------- |
-| !cb channel live #DISCORDCHANNELNAME | Set channel for live content. |
-| !cb channel published #DISCORDCHANNELNAME  | Set channel for published content. |
-| !cb channel ownerlive #DISCORDCHANNELNAME | Set channel for the Server Owner's live content. |
-| !cb channel ownerpublished #DISCORDCHANNELNAME  | Set channel for the Server Owner's published content. |
-| !cb channel greetings #DISCORDCHANNELNAME | Set greetings/goodbye channel. |
-| !cb channel ownertwitchfeed #DISCORDCHANNELNAME | Set owner twitch feed notification channel. |
-| !cb channel clear ownerlive / live / ownerpublished / published / greetings / ownertwitchfeed / all | Clear set channels. |
+##### Command:
+
+`channel live [#DISCORD_CHANNEL_NAME]`
+
+##### Description:
+
+Run this command to set the channel that livestream notifications will be sent to.
+
+##### Required Parameters
+
+- `#DISCORD_CHANNEL_NAME` - This is the channel you would like to send the notifications to. Note - Please tag the channel you'd like, starting with #.
+
+##### Example Usage:
+
+`!cb channel live #live-announcements`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Owner Livestream Channel
+
+##### Command:
+
+`channel ownerlive [#DISCORD_CHANNEL_NAME]`
+
+##### Description:
+
+Run this command to set the channel that owner livestream notifications will be sent to.
+
+##### Required Parameters
+
+- `#DISCORD_CHANNEL_NAME` - This is the channel you would like to send the notifications to. Note - Please tag the channel you'd like, starting with #.
+
+##### Example Usage:
+
+`!cb channel ownerlive #live-announcements`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Published / VOD Channel
+
+##### Command:
+
+`channel published [#DISCORD_CHANNEL_NAME]`
+
+##### Description:
+
+Run this command to set the channel that published notifications will be sent to.
+
+##### Required Parameters
+
+- `#DISCORD_CHANNEL_NAME` - This is the channel you would like to send the notifications to. Note - Please tag the channel you'd like, starting with #.
+
+##### Example Usage:
+
+`!cb channel published #new-videos`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Owner Published / VOD Channel
+
+##### Command:
+
+`channel ownerpublished [#DISCORD_CHANNEL_NAME]`
+
+##### Description:
+
+Run this command to set the channel that owner published notifications will be sent to.
+
+##### Required Parameters
+
+- `#DISCORD_CHANNEL_NAME` - This is the channel you would like to send the notifications to. Note - Please tag the channel you'd like, starting with #.
+
+##### Example Usage:
+
+`!cb channel published #new-videos`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Greeting / Goodbye Channel
+
+##### Command:
+
+`channel greetings [#DISCORD_CHANNEL_NAME]`
+
+##### Description:
+
+Run this command to set the channel that greeting and goodbye notifications will be sent to.
+
+##### Required Parameters
+
+- `#DISCORD_CHANNEL_NAME` - This is the channel you would like to send the notifications to. Note - Please tag the channel you'd like, starting with #.
+
+##### Example Usage:
+
+`!cb channel greetings #welcome-mat`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Owner Twitch Feed Channel
+
+##### Command:
+
+`channel ownertwitchfeed [#DISCORD_CHANNEL_NAME]`
+
+##### Description:
+
+Run this command to set the channel that the owner Twitch feed notifications will be sent to.
+
+##### Required Parameters
+
+- `#DISCORD_CHANNEL_NAME` - This is the channel you would like to send the notifications to. Note - Please tag the channel you'd like, starting with #.
+
+##### Example Usage:
+
+`!cb channel ownertwitchfeed #twitch-feed`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Clear Channel Settings
+
+##### Command:
+
+`channel clear [CHANNEL_TYPE]`
+
+##### Description:
+
+Run this command to clear the channel settings, whether it be a single setting, or all of them.
+
+##### Required Parameters
+
+- `#CHANNEL_TYPE` - This is the specific channel you'd like cleared. Your options are:
+
+* live
+* ownerlive
+* published
+* ownerpublished
+* greetings
+* ownertwitchfeed
+* all
+
+##### Example Usage:
+
+`!cb channel clear live`
+
+###### [Back to Top](#couchbot-commands)
+
+------
 
 ---
 
