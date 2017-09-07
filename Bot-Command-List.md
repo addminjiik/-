@@ -5,10 +5,11 @@ WORK IN PROGRESS.
 **In this section:**
 
 - [Owner Commands](#owner-commands)
+  - [Approved Admin Configuration](#approved-admin-configuration)
   - [`admin add [@DISCORD_USER_NAME]`](#add-approved-admin)
 
 ### Owner Commands
-#### Approved Admin Configuration Options
+#### Approved Admin Configuration
 
 An approved admin on your server will be able to add/remove streamers to/from the streamer lists. They WILL NOT be able to add/remove platform owner settings though.
 
