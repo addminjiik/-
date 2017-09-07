@@ -6,7 +6,9 @@ WORK IN PROGRESS.
 
 - [Owner Commands](#owner-commands)
   - [Approved Admin Configuration](#approved-admin-configuration)
-  - [`admin add [@DISCORD_USER_NAME]`](#add-approved-admin)
+    - [`admin add [@DISCORD_USER_NAME]`](#add-approved-admin)
+    - [`admin remove [@DISCORD_USER_NAME]`](#remove-approved-admin)
+    - [`admin list`](#list-approved-admins)
 
 ### Owner Commands
 #### Approved Admin Configuration
@@ -31,8 +33,49 @@ Run this command to add a new approved admin to the server admin list.
 
 `!cb admin add @dawgeth`
 
+###### [Back to Top](#couchbot-commands)
+
 ------
 
+#### Remove Approved Admin
+
+##### Command:
+
+`admin remove [@DISCORD_USER_NAME]`
+
+##### Description:
+
+Run this command to remove an approved admin from the server admin list.
+
+##### Required Parameters
+
+- `@DISCORD_USER_NAME` - This is the user you would like to remove as an approved admin for your server. Note - You must TAG the user you'd like to add with the @ symbol followed by their username.
+
+##### Example Usage:
+
+`!cb admin remove @dawgeth`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### List Approved Admins
+
+##### Command:
+
+`admin list`
+
+##### Description:
+
+Run this command to see a list of your servers approved admins.
+
+##### Example Usage:
+
+`!cb admin list`
+
+###### [Back to Top](#couchbot-commands)
+
+------
 
 | Command Syntax | What It Does?! |
 | -------------- | -------------- |
