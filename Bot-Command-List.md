@@ -1,5 +1,38 @@
-### Owner (Manage Server Permissions) Commands
+WORK IN PROGRESS.
+
+## CouchBot Commands
+
+**In this section:**
+
+- [Owner Commands](#owner-commands)
+  - [`admin add [@DISCORD_USER_NAME]`](#add-approved-admin)
+
+### Owner Commands
 #### Approved Admin Configuration Options
+
+An approved admin on your server will be able to add/remove streamers to/from the streamer lists. They WILL NOT be able to add/remove platform owner settings though.
+
+#### Add Approved Admin
+
+##### Command:
+
+`admin add [@DISCORD_USER_NAME]`
+
+##### Description:
+
+Run this command to add a new approved admin to the server admin list.
+
+##### Required Parameters
+
+- `@DISCORD_USER_NAME` - This is the user you would like to add as an approved admin for your server. Note - You must TAG the user you'd like to add with the @ symbol followed by their username.
+
+##### Example Usage:
+
+`!cb admin add @dawgeth`
+
+------
+
+
 | Command Syntax | What It Does?! |
 | -------------- | -------------- |
 | !cb admin add @DiscordUsername | Add a new approved admin. |
