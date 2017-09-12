@@ -5,8 +5,3 @@
 ## Hosted Bot (CouchBot)
 ##### [Setup Tutorial](https://github.com/dawgeth/CouchBot/wiki/Setup-Tutorial)  
 ##### [Video - How to Setup CouchBot](https://github.com/dawgeth/CouchBot/wiki/Setup-Video)
-## Self Host Bot (YourBot)
-##### [Installation](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Installation)
-##### [Configuration](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Configuration)
-##### [Migrating to New Version](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Migration)
-##### [Video - How to Setup Self Host CouchBot](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Setup-Video)
