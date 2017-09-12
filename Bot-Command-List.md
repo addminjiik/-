@@ -9,7 +9,11 @@ WORK IN PROGRESS.
     - [`admin add [@DISCORD_USER_NAME]`](#add-approved-admin)
     - [`admin remove [@DISCORD_USER_NAME]`](#remove-approved-admin)
     - [`admin list`](#list-approved-admins)
-  - 
+  - [Channel Configuration](#channel-configuration)
+    - [`channel live [#DISCORD_CHANNEL_NAME]`](#livestream-channel)
+    - [`channel ownerlive [#DISCORD_CHANNEL_NAME]`](#owner-livestream-channel)
+    - [`channel published [#DISCORD_CHANNEL_NAME]`](#published-/-vod-channel)
+    - [`channel ownerpublished [#DISCORD_CHANNEL_NAME]`](#owner-published-/-vod-channel)
 
 ## Owner Commands
 ### Approved Admin Configuration
