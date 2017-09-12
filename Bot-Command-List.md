@@ -12,8 +12,11 @@ WORK IN PROGRESS.
   - [Channel Configuration](#channel-configuration)
     - [`channel live [#DISCORD_CHANNEL_NAME]`](#livestream-channel)
     - [`channel ownerlive [#DISCORD_CHANNEL_NAME]`](#owner-livestream-channel)
-    - [`channel published [#DISCORD_CHANNEL_NAME]`](#published-/-vod-channel)
-    - [`channel ownerpublished [#DISCORD_CHANNEL_NAME]`](#owner-published-/-vod-channel)
+    - [`channel published [#DISCORD_CHANNEL_NAME]`](#published--vod-channel)
+    - [`channel ownerpublished [#DISCORD_CHANNEL_NAME]`](#owner-published--vod-channel)
+    - [`channel greetings [#DISCORD_CHANNEL_NAME]`](#greeting--goodbye-channel)
+    - [`channel ownertwitchfeed [#DISCORD_CHANNEL_NAME]`](#owner-twitch-feed-channel)
+    - [`channel clear [CHANNEL_TYPE]`](#clear-channel-settings)
 
 ## Owner Commands
 ### Approved Admin Configuration
