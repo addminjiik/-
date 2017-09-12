@@ -17,6 +17,13 @@ WORK IN PROGRESS.
     - [`channel greetings [#DISCORD_CHANNEL_NAME]`](#greeting--goodbye-channel)
     - [`channel ownertwitchfeed [#DISCORD_CHANNEL_NAME]`](#owner-twitch-feed-channel)
     - [`channel clear [CHANNEL_TYPE]`](#clear-channel-settings)
+  - [Allow Configuration](#allow-configuration)
+    - [`allow mention [true / false]`](#mention-role)
+    - [`allow thumbnails [true / false]`](#thumbnails)
+    - [`allow live [true / false]`](#live)
+    - [`allow published [true / false]`](#published-vod)
+    - [`allow ownerchannelfeed [true / false]`](#twitch-owner-channel-feed)
+
 
 ## Owner Commands
 ### Approved Admin Configuration
@@ -171,7 +178,7 @@ Run this command to set the channel that owner published notifications will be s
 
 ##### Example Usage:
 
-`!cb channel published #new-videos`
+`!cb channel ownerpublished #new-videos`
 
 ###### [Back to Top](#couchbot-commands)
 
@@ -251,17 +258,126 @@ Run this command to clear the channel settings, whether it be a single setting, 
 
 ------
 
+### Allow Configuration
+
+Use the following commands to configure what the bot is allowed to do.
+
+#### Mention Role
+
+##### Command:
+
+`allow mention [true / false]`
+
+##### Description:
+
+Run this command to allow / deny the ability for announcements to contain an @role announcement.
+
+##### Required Parameters
+
+- `true / false` - True or False. Yes or No.
+
+##### Example Usage:
+
+`!cb allow mention true`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Thumbnails
+
+##### Command:
+
+`allow thumbnails [true / false]`
+
+##### Description:
+
+Run this command to allow / deny the ability for announcements to contain a thumbnail.
+
+##### Required Parameters
+
+- `true / false` - True or False. Yes or No.
+
+##### Example Usage:
+
+`!cb allow thumbnail true`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Live
+
+##### Command:
+
+`allow live [true / false]`
+
+##### Description:
+
+Run this command to allow / deny the ability for livestream announcements.
+
+##### Required Parameters
+
+- `true / false` - True or False. Yes or No.
+
+##### Example Usage:
+
+`!cb allow live true`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Published / VOD
+
+##### Command:
+
+`allow published [true / false]`
+
+##### Description:
+
+Run this command to allow / deny the ability for published / VOD announcements.
+
+##### Required Parameters
+
+- `true / false` - True or False. Yes or No.
+
+##### Example Usage:
+
+`!cb allow published true`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Twitch Owner Channel Feed
+
+##### Command:
+
+`allow ownerchannelfeed [true / false]`
+
+##### Description:
+
+Run this command to allow / deny the ability for Twitch Owner channel feed announcements.
+
+##### Required Parameters
+
+- `true / false` - True or False. Yes or No.
+
+##### Example Usage:
+
+`!cb allow ownerchannelfeed true`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+
+
+
+
+
 ---
-
-#### "Allow" Configuration Options
-
-| Command Syntax | What It Does?! |
-| -------------- | -------------- |
-| !cb allow mention true / false | Allow @ mentions at the start of your announcements. |
-| !cb allow thumbnails true / false | Allow thumbnails in announcements. |
-| !cb allow live true / false | Allow live content to be announced. |
-| !cb allow published true / false | Allow published content to be announced. |
-| !cb allow ownerchannelfeed true / false | Allw owner twitch channel feed announcements. |
 
 ---
 
