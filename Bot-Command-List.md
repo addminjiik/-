@@ -23,6 +23,12 @@ WORK IN PROGRESS.
     - [`allow live [true / false]`](#live)
     - [`allow published [true / false]`](#published-vod)
     - [`allow ownerchannelfeed [true / false]`](#twitch-owner-channel-feed)
+  - [Message Configuration](#message-configuration)
+    - [`message live "[Your Custom Message"`](#live-message)
+	- [`message published "[Your Custom Message]"`](#published-message)
+	- [`message offline "[Your Custom Message]"`](#offline-message)
+	- [`message testlive [PLATFORM]`](#test-live-message)
+	- [`message testpublished`](#test-published-message)
 
 
 ## Owner Commands
