@@ -372,26 +372,117 @@ Run this command to allow / deny the ability for Twitch Owner channel feed annou
 
 ------
 
+### Message Configuration
+
+Use the following commands to configure custom message options and test them.
+
+#### Live Message
+
+##### Command:
+
+`message live "[Your Custom Message]"`
+
+##### Description:
+
+Run this command to set a custom message to be announced when configured channels go live.
+
+##### Required Parameters
+
+- `Your Custom Message` - This message has to be surrounded with quotes. You can include the following custom variables... %CHANNEL%, %TITLE%, %URL%, and %GAME%. Note, %GAME% doesn't work on YouTube. It will be replaced with "a game".
+
+##### Example Usage:
+
+`!cb message live "%CHANNEL% just went live - %TITLE% - Playing %GAME% - Click to Watch: %URL%"`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Published Message
+
+##### Command:
+
+`message published "[Your Custom Message]"`
+
+##### Description:
+
+Run this command to set a custom message to be announced when configured channels publish new content.
+
+##### Required Parameters
+
+- `Your Custom Message` - This message has to be surrounded with quotes. You can include the following custom variables... %CHANNEL%, %TITLE%, and %URL%.
+
+##### Example Usage:
+
+`!cb message published "%CHANNEL% just posted a new video - %TITLE% - Click to Watch: %URL%"`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Offline Message
+
+##### Command:
+
+`message offline "[Your Custom Message]"`
+
+##### Description:
+
+Run this command to replace the default Stream Offline message that displays when a streamer goes offline. (Please note - only used if !cb config deleteoffline is set to false.)
+
+##### Required Parameters
+
+- `Your Custom Message` - This message has to be surrounded with quotes.
+
+##### Example Usage:
+
+`!cb message offline "This stream is now offline. Sorry you missed the fun."`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Test Live Message
+
+##### Command:
+
+`message testlive [PLATFORM]`
+
+##### Description:
+
+Run this command to test your custom live message. This will display in your current channel, not the live channel you have set.
+
+##### Required Parameters
+
+- `[PLATFORM]` - Replace with: mixer, smashcast, twitch, or youtube.
+
+##### Example Usage:
+
+`!cb message testlive mixer`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Test Published Message
+
+##### Command:
+
+`message testpublished`
+
+##### Description:
+
+Run this command to test your custom published message. This will display in your current channel, not the live channel you have set.
+
+##### Example Usage:
+
+`!cb message testpublished`
+
+###### [Back to Top](#couchbot-commands)
+
+------
 
 
-
-
-
----
-
----
-
-#### Message Configuration Options
-
-| Command Syntax | What It Does?! |
-| -------------- | -------------- |
-| !cb message live "YOUR MESSAGE HERE" | Set your own live message! Variables you can use: %CHANNEL%, %TITLE%, %URL%, and %GAME% (works Twitch, Mixer, and Smashcast. YouTube will put "a game" in place of the game title. API limitation :() |
-| !cb message published "YOUR MESSAGE HERE" | Set your own Published Video message! Variables you can use: %CHANNEL%, %TITLE%, and %URL% |
-| !cb message offline "YOUR MESSAGE HERE" | Set your own message to display when a stream goes offline (!cb config deleteoffline must be set to false) |
-| !cb message testlive mixer / smashcast / twitch / youtube | Test the output of a specific platform. |
-| !cb message testpublished | Test output of a published video. |
-
----
 
 #### Greeting/Goodbye Configuration Options
 
