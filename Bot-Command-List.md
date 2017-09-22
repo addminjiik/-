@@ -24,11 +24,16 @@ WORK IN PROGRESS.
     - [`allow published [true / false]`](#published-vod)
     - [`allow ownerchannelfeed [true / false]`](#twitch-owner-channel-feed)
   - [Message Configuration](#message-configuration)
-    - [`message live "[Your Custom Message"`](#live-message)
+    - [`message live "[Your Custom Message]"`](#live-message)
 	- [`message published "[Your Custom Message]"`](#published-message)
 	- [`message offline "[Your Custom Message]"`](#offline-message)
 	- [`message testlive [PLATFORM]`](#test-live-message)
 	- [`message testpublished`](#test-published-message)
+  - [Greeting / Goodbye Configuration](#greeting--goodbye-configuration)
+    - [`greetings [on / off]`](#greetings)
+	- [`goodbyes [on / off]`](#goodbyes)
+	- [`greetings set "[Your Custom Message]"`](#greeting-message)
+	- [`goodbyes set "[Your Custom Message]"`](#goodbye-message)
 
 
 ## Owner Commands
@@ -488,18 +493,100 @@ Run this command to test your custom published message. This will display in you
 
 ------
 
+### Greeting / Goodbye Configuration
+
+Use the following commands to configure greeting and goodbye functionality.
+
+#### Greetings
+
+##### Command:
+
+`greetings [on / off]`
+
+##### Description:
+
+Run this command to turn greetings on / off.
+
+##### Required Parameters
+
+- `on / off` - On for on. Off for off.
+
+##### Example Usage:
+
+`!cb greetings on`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Goodbyes
+
+##### Command:
+
+`goodbyes [on / off]"`
+
+##### Description:
+
+Run this command to turn goodbyes on / off.
+
+##### Required Parameters
+
+- `on / off` - On for on. Off for off.
+
+##### Example Usage:
+
+`!cb goodbyes off`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Greeting Message
+
+##### Command:
+
+`greetings set "[Your Custom Message]"`
+
+##### Description:
+
+Run this command to replace the default Greeting message.
+
+##### Required Parameters
+
+- `Your Custom Message` - This message has to be surrounded with quotes. Use the variables %USER% to dynamically insert the new users name, or %NEWLINE% for a line break.
+
+##### Example Usage:
+
+`!cb greetings set "Hello there, %USER%!"`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Goodbye Message
+
+##### Command:
+
+`goodbyes set "[Your Custom Message]"`
+
+##### Description:
+
+Run this command to replace the default Goodbye message.
+
+##### Required Parameters
+
+- `Your Custom Message` - This message has to be surrounded with quotes. Use the variables %USER% to dynamically insert the new users name, or %NEWLINE% for a line break.
+
+##### Example Usage:
+
+`!cb goodbyes set "Good bye, %USER%!"`
+
+###### [Back to Top](#couchbot-commands)
+
+------
 
 
-#### Greeting/Goodbye Configuration Options
 
-| Command Syntax | What It Does?! |
-| -------------- | -------------- |
-| !cb greetings on /off | Toggle on or off greeting notifications. |
-| !cb goodbyes on /off | Toggle on or off goodbyes notifications. |
-| !cb greetings set "Your Welcome Message!" | Customize your greeting. %USER% and %NEWLINE% can be used to insert the newcomers name and/or a new line. |
-| !cb goodbyes set "Your Goodbye Message!" | Customize your greeting. %USER% and %NEWLINE% can be used to insert the newcomers name and/or a new line. |
-
----
 
 #### Misc. Configuration Options
 
