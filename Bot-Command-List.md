@@ -300,7 +300,7 @@ Run this command to allow / deny the ability for announcements to contain a thum
 
 ##### Example Usage:
 
-`!cb allow thumbnail true`
+`!cb allow thumbnails true`
 
 ###### [Back to Top](#couchbot-commands)
 
