@@ -21,7 +21,7 @@ WORK IN PROGRESS.
     - [`allow mention [true / false]`](#mention-role)
     - [`allow thumbnails [true / false]`](#thumbnails)
     - [`allow live [true / false]`](#live)
-    - [`allow published [true / false]`](#published-vod)
+    - [`allow published [true / false]`](#published--vod)
     - [`allow ownerchannelfeed [true / false]`](#twitch-owner-channel-feed)
   - [Message Configuration](#message-configuration)
     - [`message live "[Your Custom Message]"`](#live-message)
