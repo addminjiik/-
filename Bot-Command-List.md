@@ -35,12 +35,12 @@ WORK IN PROGRESS.
 	- [`greetings set "[Your Custom Message]"`](#greeting-message)
 	- [`goodbyes set "[Your Custom Message]"`](#goodbye-message)
   - [Misc. Configuration Options](#misc-configuration-options)
-    - [`config list`](#greetings)
-    - [`config textannouncements [true / false]`](#greetings)
-    - [`config timezoneoffset [number]`](#greetings)
-    - [`config deleteoffline [true / false]`](#greetings)
-    - [`config mentionrole [@DISCORD_ROLE]`](#greetings)
-    - [`config publishedytg[true / false]`](#greetings)
+    - [`config list`](#configuration-list)
+    - [`config textannouncements [true / false]`](#toggle-text-announcements)
+    - [`config timezoneoffset [number]`](#time-zone-offset)
+    - [`config deleteoffline [true / false]`](#delete-offline-streams)
+    - [`config mentionrole [@DISCORD_ROLE]`](#mention-role)
+    - [`config publishedytg [true / false]`](#published-gaming-urls)
 
 ## Owner Commands
 ### Approved Admin Configuration
