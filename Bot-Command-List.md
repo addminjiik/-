@@ -34,7 +34,13 @@ WORK IN PROGRESS.
 	- [`goodbyes [on / off]`](#goodbyes)
 	- [`greetings set "[Your Custom Message]"`](#greeting-message)
 	- [`goodbyes set "[Your Custom Message]"`](#goodbye-message)
-
+  - [Misc. Configuration Options](#misc-configuration-options)
+    - [`config list`](#greetings)
+    - [`config textannouncements [true / false]`](#greetings)
+    - [`config timezoneoffset [number]`](#greetings)
+    - [`config deleteoffline [true / false]`](#greetings)
+    - [`config mentionrole [@DISCORD_ROLE]`](#greetings)
+    - [`config publishedytg[true / false]`](#greetings)
 
 ## Owner Commands
 ### Approved Admin Configuration
@@ -585,19 +591,143 @@ Run this command to replace the default Goodbye message.
 
 ------
 
+### Misc. Configuration Options
+
+Use the following commands to configure various other bits and bobs.
+
+#### Configuration List
+
+##### Command:
+
+`conflig list`
+
+##### Description:
+
+Run this command to see your server configuration.
+
+##### Example Usage:
+
+`!cb config list`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Toggle Text Announcements
+
+##### Command:
+
+`config textannouncements [true / false]`
+
+##### Description:
+
+Run this command to toggle embedded vs. text announcements.
+
+##### Required Parameters
+
+- `true / false` - True or False. Yes or No.
+
+##### Example Usage:
+
+`!cb config textannouncements true`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Time Zone Offset
+
+##### Command:
+
+`config timezoneoffset [number]`
+
+##### Description:
+
+Run this command to set your servers time zone offset.
+
+##### Required Parameters
+
+- `number` - A number. Can be a negative. No decimals plz.
+
+##### Example Usage:
+
+`!cb config timezoneoffset -5`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Delete Offline Streams
+
+##### Command:
+
+`config deleteoffline [true / false]`
+
+##### Description:
+
+Run this command to toggle delete offline vs. change text when stream goes offline.
+
+By default, false, if you go offline - your announcement will just be appended with text indicating the stream is over. If you set this to true, it'll (most the time) delete your stream announcement shortly after your stream goes offline.
+
+##### Required Parameters
+
+- `true / false` - True or False. Yes or No.
+
+##### Example Usage:
+
+`!cb config deleteoffline true`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Mention Role
+
+##### Command:
+
+`config mentionrole [@DISCORD_ROLE]`
+
+##### Description:
+
+Run this command to set the role that will get announced if Allow Mentions is turned on. 
+
+(By default this is @everyone)
+
+##### Required Parameters
+
+- `@DISCORD_ROLE` - A Discord Role. Also can use @everyone or here (no @. Please leave the @ off for @here) for @everyone or @here.
+
+##### Example Usage:
+
+`!cb config mentionrole @Subscribers`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Published Gaming URLs
+
+##### Command:
+
+`config publishedytg [true / false]`
+
+##### Description:
+
+Run this command to enable YouTube Gaming links for Published / VOD YouTube Content.
+
+##### Required Parameters
+
+- `true / false` - True or False. Yes or No.
+
+##### Example Usage:
+
+`!cb config publishedytg true`
+
+###### [Back to Top](#couchbot-commands)
+
+------
 
 
-
-#### Misc. Configuration Options
-
-| Command Syntax | What It Does?! |
-| -------------- | -------------- |
-| !cb config list | Check out your current configuration settings. |
-| !cb config textannouncements true / false | Use old announcements if true, use embeds if false. |
-| !cb config timezoneoffset NUMBER | Set your timezone offset from GMT. (ie: !cb config timezoneoffset |5 for EST) |
-| !cb config deleteoffline true / false | If true, messages will be deleted when the user goes offline. If false, a message indicating it is now offline will be added. |
-| !cb config mentionrole @ROLE|NAME | Set this to @everyone, or @YourCustomRole. This role will be announced if !cb allow mention is set to true. Please note | @here is not a valid role. This is unsusable. You can however, disable mentions .. and use @here in your custom messages. These commands can be found in the section right above this one :) |
-| !cb config publishedytg true / false | www. vs gaming. on YouTube links. |
 
 ---
 
