@@ -1,3 +1,5 @@
+PLEASE NOTE. THIS IS INVALID. SELF HOST IS NO LONGER ABLE TO BE DONE FOR NOW. IT MAY NOT EVER BE A THING AGAIN UNLESS YOU WANT TO FIGURE IT OUT VIA THE CODE.
+
 Migrating to a New Version? [This Migration](https://github.com/dawgeth/CouchBot/wiki/Self-Host-Bot-Migration) document may help!
 
 1. Go to [https://console.developers.google.com](https://console.developers.google.com). Create an app. Create API key. Save that API Key.
