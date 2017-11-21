@@ -57,8 +57,20 @@ WORK IN PROGRESS.
 	- [`twitch removegame "[GAMENAME]"`](#remove-a-twitch-game)
 	- [`listteams`](#list-twitch-teams-followed)
 	- [`listgames`](#list-twitch-games-followed)
-		
-	
+- [Everyone Commands!](#everyone-commands)
+  - [Information Commands](#user-commands)
+    - [`invite`](#invite-the-bot)
+	- [`uptime`](#check-uptime)
+	- [`alerts`](#alerts)
+	- [`info`](#info)
+	- [`ping`](#ping)
+	- [`ytidlookup "[CHANNELNAME]"`](#lookup-a-youtube-channel-id)
+	- [`haibai`](#haibai)
+	- [`flip`](#flip)
+	- [`unflip`](#unflip)
+	- [`echo "[MESSAGE]"`](#echo)
+	- [`echoembed "[MESSAGE]"`](#echoembed)	
+	- [`strawpoll create "[QUESTION]|[CHOICE1],[CHOICE2],[ETC]|[true / false]"`](#create-a-strawpoll)	
 
 ## Owner Commands
 ### Approved Admin Configuration
@@ -1052,30 +1064,250 @@ Run this command to list the Twitch games you follow.
 
 ------
 
+## Everyone Commands
+### User Commands
 
+These commands give various information to the user.
 
+#### Invite the Bot
 
+##### Command:
 
+`invite`
 
+##### Description:
 
+Run this command to get a DM with an invite link.
 
+##### Example Usage:
 
-### Everyone! Commands
-#### Bot Info Commands
+`!cb invite`
 
-| Command Syntax | What It Does?! |
-| -------------- | -------------- |
-| !cb invite | Get an invite link for CouchBot to join your server! |
-| !cb uptime | See bot uptime. |
-| !cb alerts | See the # of alerts that have been sent. |
-| !cb info | # of Servers, Configured Users, and Helpful links. |
+###### [Back to Top](#couchbot-commands)
 
----
+------
 
-#### Misc. Commands
+#### Check Uptime
 
-| Command Syntax | What It Does?! |
-| -------------- | -------------- |
-| !cb ytidlookup ChannelName | Need to lookup a YouTube Channel ID? Use this! (ie: !cb ytidlookup dawgeth) |
-| !cb strawpoll create "QUESTION|CHOICE1,CHOICE2,etc|TRUE/FALSE for multi-choice" |
-| !cb haibai | let folks know Hi! Then Bye! |
+##### Command:
+
+`uptime`
+
+##### Description:
+
+Run this command to see the uptime of the bot.
+
+##### Example Usage:
+
+`!cb uptime`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Alerts
+
+##### Command:
+
+`alerts`
+
+##### Description:
+
+Run this command to get statistics of the alerts sent by the bot.
+
+##### Example Usage:
+
+`!cb alerts`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Info
+
+##### Command:
+
+`invite`
+
+##### Description:
+
+Run this command to get a summary of information pertaining to the bot.
+
+##### Example Usage:
+
+`!cb info`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Ping
+
+##### Command:
+
+`ping`
+
+##### Description:
+
+Run this command to ping the bot.
+
+##### Example Usage:
+
+`!cb ping`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Lookup a YouTube Channel ID
+
+##### Command:
+
+`ytidlookup "[CHANNELNAME]"`
+
+##### Description:
+
+Run this command to get a DM with an invite link.
+
+Note: Make sure to wrap your channel name with " and ".
+
+##### Required Parameters
+
+- `[CHANNELNAME]` - Channel name you want to find the Channel ID for.
+
+##### Example Usage:
+
+`!cb ytidlookup "Matt the Developer"`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Haibai
+
+##### Command:
+
+`haibai`
+
+##### Description:
+
+Run this command to get a lil of hai, with a chaser of bai.
+
+##### Example Usage:
+
+`!cb haibai`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Flip
+
+##### Command:
+
+`flip`
+
+##### Description:
+
+(╯°□°）╯︵ ┻━┻
+
+##### Example Usage:
+
+`!cb flip`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Unflip
+
+##### Command:
+
+`unflip`
+
+##### Description:
+
+┬─┬﻿ ノ( ゜-゜ノ)
+
+##### Example Usage:
+
+`!cb unflip`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Echo
+
+##### Command:
+
+`echo "[MESSAGE]"`
+
+##### Description:
+
+Run this command to have CouchBot echo you.
+
+Note: Make sure to wrap your channel name with " and ".
+
+##### Required Parameters
+
+- `[MESSAGE]` - The message you want embeded.
+
+##### Example Usage:
+
+`!cb embed "Hi there!"`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Echoembed
+
+##### Command:
+
+`echoembed "[MESSAGE]"`
+
+##### Description:
+
+Run this command to have CouchBot echo you... in an embed!
+
+Note: Make sure to wrap your channel name with " and ".
+
+##### Required Parameters
+
+- `[MESSAGE]` - The message you want embeded.
+
+##### Example Usage:
+
+`!cb echoembed "Hi there!"`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Create a Strawpoll
+
+##### Command:
+
+`strawpoll create "[QUESTION]|[CHOICE1],[CHOICE2],[ETC]|[true / false]"`
+
+##### Description:
+
+Run this command to create a Strawpoll.
+
+Note: Make sure to wrap your creation with " and ".
+
+##### Required Parameters
+
+- `[QUESTION]` - Question you want to ask.
+- `[CHOICE]` - List of choices separated by ,.
+- `[true / false]` - Allow multiple choice
+
+##### Example Usage:
+
+`!cb strawpoll create "We cool?|Yep,Nope|false"`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
