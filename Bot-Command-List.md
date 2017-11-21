@@ -43,7 +43,15 @@ WORK IN PROGRESS.
     - [`config deleteoffline [true / false]`](#delete-offline-streams)
     - [`config mentionrole [@DISCORD_ROLE]`](#mention-role)
     - [`config publishedytg [true / false]`](#published-gaming-urls)
-- [Owner / Approved Admin Commands](#owner-commands)
+- [Owner / Approved Admin Commands](#owner--approved-admincommands)
+  - [Streamer and Content Creator Settings](#streamer-and-content-creator-settings)
+    - [`cb streamer list`](#list-your-creators)
+	- [`cb [PLATFORM] add [CHANNELID]`](#add-a-creator)
+	- [`cb [PLATFORM] remove [CHANNELID]`](#remove-a-creator)
+	- [`cb [PLATFORM] owner [CHANNELID]`](#add-an-owner-creator)
+	- [`cb [PLATFORM] resetowner`](#remove-an-owner-creator)
+	- [`cb [PLATFORM] announce [CHANNELID]`](#announce-a-creator)
+	
 
 ## Owner Commands
 ### Approved Admin Configuration
@@ -474,7 +482,7 @@ Run this command to test your custom live message. This will display in your cur
 
 ##### Required Parameters
 
-- `[PLATFORM]` - Replace with: mixer, smashcast, twitch, or youtube.
+- `[PLATFORM]` - Replace with: mixer, mobcrush, picarto, smashcast, twitch, youtube, or vidme.
 
 ##### Example Usage:
 
@@ -765,6 +773,158 @@ Run this command to enable YouTube Gaming links for Published / VOD YouTube Cont
 ###### [Back to Top](#couchbot-commands)
 
 ------
+
+## Owner / Approved Admin Commands
+### Streamer and Content Creator Settings
+
+These commands have to do with creator, streamers, who gets announced, etc.
+
+#### List Your Creators
+
+##### Command:
+
+`streamer list`
+`streamer list [PLATFORM]`
+
+##### Description:
+
+Run this command to see what creators you follow / announce.
+
+##### Optional Parameters
+
+- `[PLATFORM]` - Replace with: mixer, mobcrush, picarto, smashcast, twitch, youtube, or vidme.
+
+##### Example Usage:
+
+`!cb streamer list youtube`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Add a Creator
+
+##### Command:
+
+`[PLATFORM] add [CHANNELID]`
+
+##### Description:
+
+Run this command to add a new creator to announce.
+
+##### Required Parameters
+
+- `[PLATFORM]` - Replace with: mixer, mobcrush, picarto, smashcast, twitch, youtube, or vidme.
+- `[CHANNELID]` - Mixer, Smashcast, Twitch, Use Channel Name. YouTube needs to use the Channel Id (24 characters, starts with UC. Can be found at http://youtube.com/account_advanced).
+
+##### Example Usage:
+
+`!cb twitch add DevTheMatt`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Remove a Creator
+
+##### Command:
+
+`[PLATFORM] remove [CHANNELID]`
+
+##### Description:
+
+Run this command to remove a creator.
+
+##### Required Parameters
+
+- `[PLATFORM]` - Replace with: mixer, mobcrush, picarto, smashcast, twitch, youtube, or vidme.
+- `[CHANNELID]` - Mixer, Smashcast, Twitch, Use Channel Name. YouTube needs to use the Channel Id (24 characters, starts with UC. Can be found at http://youtube.com/account_advanced).
+
+##### Example Usage:
+
+`!cb twitch remove DevTheMatt`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Add an Owner Creator
+
+##### Command:
+
+`[PLATFORM] remove [CHANNELID]`
+
+##### Description:
+
+Run this command to add an owner creator. What is an owner creator? Well! So glad you asked. There can be a single owner assigned to a server. This allows you to set the Owner Channel and separate those announcements. This was implemented to allow a single creator to announce to one channel, while others are announced in another channel.
+
+##### Required Parameters
+
+- `[PLATFORM]` - Replace with: mixer, mobcrush, picarto, smashcast, twitch, youtube, or vidme.
+- `[CHANNELID]` - Mixer, Smashcast, Twitch, Use Channel Name. YouTube needs to use the Channel Id (24 characters, starts with UC. Can be found at http://youtube.com/account_advanced).
+
+##### Example Usage:
+
+`!cb twitch owner DevTheMatt`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Remove an Owner Creator
+
+##### Command:
+
+`[PLATFORM] remove [CHANNELID]`
+
+##### Description:
+
+Run this command to remove an owner creator. What is an owner creator? Well! So glad you asked. There can be a single owner assigned to a server. This allows you to set the Owner Channel and separate those announcements. This was implemented to allow a single creator to announce to one channel, while others are announced in another channel.
+
+##### Required Parameters
+
+- `[PLATFORM]` - Replace with: mixer, mobcrush, picarto, smashcast, twitch, youtube, or vidme.
+- `[CHANNELID]` - Mixer, Smashcast, Twitch, Use Channel Name. YouTube needs to use the Channel Id (24 characters, starts with UC. Can be found at http://youtube.com/account_advanced).
+
+##### Example Usage:
+
+`!cb twitch resetowner`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Announce a Creator
+
+##### Command:
+
+`[PLATFORM] announce [CHANNELID]`
+
+##### Description:
+
+Run this command to announce a currently live channel.
+
+##### Required Parameters
+
+- `[PLATFORM]` - Replace with: mixer, mobcrush, picarto, smashcast, twitch, youtube, or vidme.
+- `[CHANNELID]` - Mixer, Smashcast, Twitch, Use Channel Name. YouTube needs to use the Video ID that you want announced (This can be found in the URL of the stream / video).
+
+##### Example Usage:
+
+`!cb twitch announce DevTheMatt`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+
+
+
+
+
+
+
+
 
 
 ---
