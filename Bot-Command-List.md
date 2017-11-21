@@ -34,6 +34,8 @@ WORK IN PROGRESS.
 	- [`goodbyes [on / off]`](#goodbyes)
 	- [`greetings set "[Your Custom Message]"`](#greeting-message)
 	- [`goodbyes set "[Your Custom Message]"`](#goodbye-message)
+	- [`greetings test`](#test-greeting-message)
+	- [`goodbyes test`](#test-goodbye-message)
   - [Misc. Configuration Options](#misc-configuration-options)
     - [`config list`](#configuration-list)
     - [`config textannouncements [true / false]`](#toggle-text-announcements)
@@ -41,6 +43,7 @@ WORK IN PROGRESS.
     - [`config deleteoffline [true / false]`](#delete-offline-streams)
     - [`config mentionrole [@DISCORD_ROLE]`](#mention-role)
     - [`config publishedytg [true / false]`](#published-gaming-urls)
+- [Owner / Approved Admin Commands](#owner-commands)
 
 ## Owner Commands
 ### Approved Admin Configuration
@@ -591,6 +594,42 @@ Run this command to replace the default Goodbye message.
 
 ------
 
+#### Test Greeting Message
+
+##### Command:
+
+`greetings test`
+
+##### Description:
+
+Run this command to test your Greeting message.
+
+##### Example Usage:
+
+`!cb greetings test`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Test Goodbye Message
+
+##### Command:
+
+`goodbyes test`
+
+##### Description:
+
+Run this command to test your Goodbye message.
+
+##### Example Usage:
+
+`!cb goodbyes test`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
 ### Misc. Configuration Options
 
 Use the following commands to configure various other bits and bobs.
@@ -727,16 +766,6 @@ Run this command to enable YouTube Gaming links for Published / VOD YouTube Cont
 
 ------
 
-
-
----
-
-#### Test Commands
-
-| Command Syntax | What It Does?! |
-| -------------- | -------------- |
-| !cb message testlive youtube / mixer / twitch / smashcast | Test live announcements. |
-| !cb message testpublished | Test published announcements. |
 
 ---
 
