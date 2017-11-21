@@ -917,6 +917,133 @@ Run this command to announce a currently live channel.
 
 ------
 
+#### Add a Twitch Team
+
+##### Command:
+
+`twitch addteam [TEAMTOKEN]`
+
+##### Description:
+
+Run this command to add a Twitch team.
+
+##### Required Parameters
+
+- `[TEAMTOKEN]` - This can be found in the team URL (ie: http://twitch.tv/team/ths <- ths is the token.)
+
+##### Example Usage:
+
+`!cb twitch addteam ths`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Remove a Twitch Team
+
+##### Command:
+
+`twitch removeteam [TEAMTOKEN]`
+
+##### Description:
+
+Run this command to remove a Twitch team.
+
+##### Required Parameters
+
+- `[TEAMTOKEN]` - This can be found in the team URL (ie: http://twitch.tv/team/ths <- ths is the token.)
+
+##### Example Usage:
+
+`!cb twitch removeteam ths`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Add a Twitch Game
+
+##### Command:
+
+`twitch addgame "[GAMENAME]"`
+
+##### Description:
+
+Run this command to add a Twitch game.
+
+Note: Surround your game names with " and ".
+
+##### Required Parameters
+
+- `[TEAMTOKEN]` - This can be found in the team URL (ie: http://twitch.tv/team/ths <- ths is the token.)
+
+##### Example Usage:
+
+`!cb twitch addgame "League of Legends"`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### Remove a Twitch Game
+
+##### Command:
+
+`twitch addgame "[GAMENAME]"`
+
+##### Description:
+
+Run this command to remove a Twitch game.
+
+Note: Surround your game names with " and ".
+
+##### Required Parameters
+
+- `[TEAMTOKEN]` - This can be found in the team URL (ie: http://twitch.tv/team/ths <- ths is the token.)
+
+##### Example Usage:
+
+`!cb twitch removegame "League of Legends" `
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### List Twitch Teams Followed
+
+##### Command:
+
+`twitch listteams`
+
+##### Description:
+
+Run this command to list the Twitch teams you follow.
+
+##### Example Usage:
+
+`!cb twitch listteams`
+
+###### [Back to Top](#couchbot-commands)
+
+------
+
+#### List Twitch Games Followed
+
+##### Command:
+
+`twitch listgames`
+
+##### Description:
+
+Run this command to list the Twitch games you follow.
+
+##### Example Usage:
+
+`!cb twitch listgames`
+
+###### [Back to Top](#couchbot-commands)
+
+------
 
 
 
@@ -925,60 +1052,6 @@ Run this command to announce a currently live channel.
 
 
 
-
-
----
-
-### Owner (Manage Server Permissions) and Approved Admin Commands
-
----
-
-#### Streamer Settings Configuration Options
-
-NOTE: In the below commands, replace CHANNEL or CHANNELID with the name of your channel .. or channel id. 
-
-| Command Syntax | What It Does?! |
-| -------------- | -------------- |
-| !cb streamer list | See a list of your configured streamers. |
-| !cb mixer add channel | |
-| !cb mixer remove channel | |
-| !cb mixer owner channel | Can only have 1 owner per server. |
-| !cb mixer resetowner | Reset the Owner Mixer channel.  |
-| !cb picarto add Channel | |
-| !cb picarto remove Channel | |
-| !cb picarto owner Channel | |
-| !cb picarto announce Channel | |
-| !cb smashcast add channel | |
-| !cb smashcast remove channel | |
-| !cb smashcast owner channel | Can only have 1 owner per server.
-| !cb smashcast resetowner | Reset the Owner Smashcast channel.  |
-| !cb twitch add channel | |
-| !cb twitch remove channel | |
-| !cb twitch owner channel | Can only have 1 owner per server.
-| !cb twitch resetowner | Reset the Owner Twitch channel. |
-| !cb vidme add channelid | |
-| !cb vidme remove channelid | |
-| !cb vidme owner channelid | Can only have 1 owner per server. |
-| !cb vidme resetowner | Reset the Owner Vidme channel. |
-| !cb youtube add channelid | |
-| !cb youtube remove channelid | |
-| !cb youtube owner channelid | Can only have 1 owner per server. |
-| !cb youtube resetowner | Reset the Owner YouTube channel. |
-
----
-
-#### Game and Team Announcements (Twitch Only)
-
-| Command Syntax | What It Does?! |
-| -------------- | -------------- |
-| !cb twitch addteam "teamtoken" |  ie: !cb twitch addteam "ths" for The Hammer Squad - To Add a Team |
-| !cb twitch removeteam "teamtoken" |  ie: !cb twitch removeteam "ths" for The Hammer Squad - To Remove a Team |
-| !cb twitch listteams | List teams you're monitoring. |
-| !cb twitch addgame "Game Name" |  ie: !cb twitch addgame "League of Legends" - To Add a Game |
-| !cb twitch removegame "Game Name" |  ie: !cb twitch removegame "League of Legends" - To Remove a Game |
-| !cb twitch listgames | List gamesyou're monitoring. |
-
----
 
 ### Everyone! Commands
 #### Bot Info Commands
