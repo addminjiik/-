@@ -45,12 +45,19 @@ WORK IN PROGRESS.
     - [`config publishedytg [true / false]`](#published-gaming-urls)
 - [Owner / Approved Admin Commands](#owner--approved-admincommands)
   - [Streamer and Content Creator Settings](#streamer-and-content-creator-settings)
-    - [`cb streamer list`](#list-your-creators)
-	- [`cb [PLATFORM] add [CHANNELID]`](#add-a-creator)
-	- [`cb [PLATFORM] remove [CHANNELID]`](#remove-a-creator)
-	- [`cb [PLATFORM] owner [CHANNELID]`](#add-an-owner-creator)
-	- [`cb [PLATFORM] resetowner`](#remove-an-owner-creator)
-	- [`cb [PLATFORM] announce [CHANNELID]`](#announce-a-creator)
+    - [`streamer list`](#list-your-creators)
+	- [`[PLATFORM] add [CHANNELID]`](#add-a-creator)
+	- [`[PLATFORM] remove [CHANNELID]`](#remove-a-creator)
+	- [`[PLATFORM] owner [CHANNELID]`](#add-an-owner-creator)
+	- [`[PLATFORM] resetowner`](#remove-an-owner-creator)
+	- [`[PLATFORM] announce [CHANNELID]`](#announce-a-creator)	
+	- [`twitch addteam [TEAMTOKEN]`](#add-a-twitch-team)
+	- [`twitch removeteam [TEAMTOKEN]`](#remove-a-twitch-team)
+	- [`twitch addgame "[GAMENAME]"`](#add-a-twitch-game)
+	- [`twitch removegame "[GAMENAME]"`](#remove-a-twitch-game)
+	- [`listteams`](#list-twitch-teams-followed)
+	- [`listgames`](#list-twitch-games-followed)
+		
 	
 
 ## Owner Commands
